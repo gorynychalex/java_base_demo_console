@@ -1,6 +1,4 @@
-https://habr.com/ru/post/125210/
-
-# Работа с Java в командной строке
+# [Работа с Java в командной строке](https://habr.com/ru/post/125210/)
 
 ### Один файл
 
@@ -19,4 +17,17 @@ javac HelloWorld.java
 
 ```
 java -classpath . HelloWorld
+```
+
+### Отделяем бинарные файлы от исходников
+```
+javac -d ./bin src/Main.java
+```
+
+```
+java -classpath /home/gorynych/study/java_simple/bin Main
+```
+или
+```
+java -classpath ./bin Main
 ```
