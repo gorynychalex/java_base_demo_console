@@ -31,3 +31,33 @@ java -classpath /home/gorynych/study/java_simple/bin Main
 ```
 java -classpath ./bin Main
 ```
+### Включение пакетов
+
+edit src/ru/popovich/demo01/Main.java
+```
+package ru.popovich.demo01;
+```
+
+```
+javac -d bin src/ru/popovich/demo01/Main.java
+```
+
+```
+java -cp ./bin ru.popovich.demo01.Main
+```
+
+```
+.
+├── bin
+│   └── ru
+│       └── popovich
+│           └── demo01
+│               └── Main.class
+├── README.md
+└── src
+    └── ru
+        └── popovich
+            └── demo01
+                └── Main.java
+```
+
