@@ -61,3 +61,15 @@ java -cp ./bin ru.popovich.demo01.Main
                 └── Main.java
 ```
 
+
+
+### Несколько файлов в программе
+
+
+```
+javac -sourcepath ./src -d bin src/ru/popovich/demo01/Main.java 
+```
+
+```
+java -cp ./bin ru.popovich.demo01.Main
+```
