@@ -83,3 +83,49 @@ javac -g -sourcepath ./src -d bin src/ru/popovich/demo01/Main.java
 ```
 jdb -classpath bin -sourcepath src ru.popovich.demo01.Main 
 ```
+
+### JUnit4 тест
+
+```
+javac -classpath lib/junit-4.13.jar -sourcepath ./src/ -d out/ test/ru/popovich/demo01/TestCalculator.java
+```
+
+```
+java -cp lib/junit-4.13.jar:lib/hamcrest-core-1.3.jar:./out org.junit.runner.JUnitCore ru.popovich.demo01.TestCalculator
+```
+
+```
+.
+├── bin
+│   └── ru
+│       └── popovich
+│           └── demo01
+│               ├── Calculator.class
+│               ├── Main.class
+│               └── Second.class
+├── lib
+│   ├── hamcrest-core-1.3.jar
+│   ├── junit-4.13.jar
+│   └── source-junit-r4.13.tar.gz
+├── out
+│   └── ru
+│       └── popovich
+│           └── demo01
+│               ├── Calculator.class
+│               └── TestCalculator.class
+├── README.md
+├── src
+│   └── ru
+│       └── popovich
+│           └── demo01
+│               ├── Calculator.java
+│               ├── Main.java
+│               └── Second.java
+└── test
+    └── ru
+        └── popovich
+            └── demo01
+                └── TestCalculator.java
+
+```
+
