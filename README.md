@@ -73,3 +73,13 @@ javac -sourcepath ./src -d bin src/ru/popovich/demo01/Main.java
 ```
 java -cp ./bin ru.popovich.demo01.Main
 ```
+
+### Запуск отладчика
+
+```
+javac -g -sourcepath ./src -d bin src/ru/popovich/demo01/Main.java 
+```
+
+```
+jdb -classpath bin -sourcepath src ru.popovich.demo01.Main 
+```
